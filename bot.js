@@ -19,12 +19,12 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " *help", " *ping" , " *bing" , "no" , "yes" ,"Download" , "bye" , "hi" , "hello" ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " *help", " *ping" , " *bing" , "Download"  ');
   	}
 });
 
 
-client.on('message', message => {
+/*client.on('message', message => {
     if (message.content === +'no') {
     	message.reply('Yes!');
   	}
@@ -37,13 +37,13 @@ client.on('message', message => {
     	message.channel.send('yes!');
   	}
 });
-
+*/
 client.on('message', message => {
     if (message.content === 'download') {
     	message.reply('the cheat is currently not available, please be patient as there is only one developer');
   	}
 });
-client.on('message', message => {
+/*client.on('message', message => {
     if (message.content === 'bye') {
     	message.reply('Hello!');
   	}
@@ -67,6 +67,6 @@ client.on('message', message => {
 });
 
 
-
+*/
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
