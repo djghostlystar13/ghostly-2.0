@@ -19,7 +19,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , "*help", "*ping" , "*bing" , "No" , "yes" ,"Download" , "Bye" , "hi" , "Hello" ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " *help", " *ping" , " *bing" , "no" , "yes" ,"Download" , "bye" , "hi" , "hello" ');
   	}
 });
 
