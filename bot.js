@@ -60,5 +60,13 @@ client.on('message', message => {
     	message.reply('Goodbye!');
   	}
 });
+client.on('message', message => {
+    if (message.content === prefix +'gta') {
+    	message.reply('error!');
+  	}
+});
+
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
