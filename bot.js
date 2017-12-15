@@ -18,17 +18,17 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
+    if (message.content === prefix +'status') {
+    	message.reply('BOT = online, menu = Offline');
+  	}
+client.on('message', message => {
     if (message.content === prefix +'help') {
     	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " *help", " *ping" , " *bing" , "Download"  ');
   	}
 });
 
 
-/*client.on('message', message => {
-    if (message.content === +'no') {
-    	message.reply('Yes!');
-  	}
-});
+
 client.on('message', message => {
     if (message.content === +'yes') {
     	message.channel.send('No!');
@@ -37,18 +37,18 @@ client.on('message', message => {
     	message.channel.send('yes!');
   	}
 });
-*/
+
 client.on('message', message => {
     if (message.content === 'download') {
     	message.reply('the cheat is currently not available, please be patient as there is only one developer');
   	}
 });
-/*client.on('message', message => {
+client.on('message', message => {
     if (message.content === 'bye') {
     	message.reply('Hello!');
   	}
 });
-
+/*
 client.on('message', message => {
     if (message.content === 'hi') {
     	message.reply('Bye!');
