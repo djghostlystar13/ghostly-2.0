@@ -37,7 +37,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'download') {
-    	message.reply('the cheat is currently not available please be patient as there is only one developer');
+    	message.reply('the cheat is currently not available, please be patient as there is only one developer');
   	}
 });
 client.on('message', message => {
