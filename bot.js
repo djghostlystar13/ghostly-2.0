@@ -1,18 +1,19 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = *;
 
-client.on('ready', () => {
+client.on(  +'ready', () => {
     console.log('I am ready!');
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
+    if (message.content === prefix +'ping') {
     	message.channel.send('PONG!');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
+    if (message.content === prefix +'bing') {
     	message.reply('BONG!');
   	}
 });
