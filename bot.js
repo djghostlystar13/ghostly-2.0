@@ -30,8 +30,11 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-    if (message.content === 'yes') {
-    	message.reply('No!');
+    if (message.content === +'yes') {
+    	message.channel.send('No!');
+  	}
+        if (message.content === +'no') {
+    	message.channel.send('yes!');
   	}
 });
 
