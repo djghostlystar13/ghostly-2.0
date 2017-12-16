@@ -24,20 +24,19 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " *help", " *ping" , " *bing" , "Download"  ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " $help", " $ping" , " $status", " $bing" , "Download"  ');
   	}
 });
 
 client.on('message', message => {
-     if (message.content === +'no') {
-    	message.channel.send('yes!');
+    if (message.content === 'no') {
+    	message.reply('Yes!');
   	}
 });
-
 client.on('message', message => {
-    if (message.content === +'yes') {
-    	message.channel.send('No!');
-    }
+    if (message.content === 'yes') {
+    	message.reply('No!');
+  	}
 });
 
 client.on('message', message => {
