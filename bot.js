@@ -24,7 +24,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " $help", " $ping" , " $status", " $bing" , "Download"  ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , " $help", " $ping" , " $status", " $bing" , "Download" , " no " , " yes " ," hi " , " hello " , " hi " , ');
   	}
 });
 
@@ -35,6 +35,17 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'yes') {
+    	message.reply('No!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content === 'No') {
+    	message.reply('Yes!');
+  	}
+});
+client.on('message', message => {
+    if (message.content === 'Yes') {
     	message.reply('No!');
   	}
 });
