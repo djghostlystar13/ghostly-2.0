@@ -21,6 +21,10 @@ client.on('message', message => {
     if (message.content === prefix +'status') {
     	message.reply('BOT = online, menu = Offline/detected.');
   	}
+    if (message.content === prefix +'s') {
+    	message.reply('BOT = online, menu = Offline/detected.');
+  	}
+    
 });
 client.on('message', message => {
     if (message.content === prefix +'help') {
