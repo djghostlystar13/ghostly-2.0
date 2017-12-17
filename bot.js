@@ -8,7 +8,7 @@ client.on(  +'ready', () => {
     
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , bot commands about the menu ! , " $status " , " $s " , " Download " , " $features " , " $skgta5 " ,  Other bot commands! " $help " , " $ping " , " $bing " , " no " , " yes " ," hi " , " hello " , " hi " ," Bye " , " goodbye " . ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , bot commands about the menu ! , " $status " , " $s " , " Download " , " $features " , " $skgta5 " ,  Other bot commands! " $help " , " $ping " , " $bing " , " no " , " yes " ," hi " , " hello " , " hi " ," Bye " , " goodbye ", $randomNumber . ');
   	}
 });
 //menu stuff 
@@ -85,6 +85,12 @@ client.on('message', message => {
   	}
        if (message.content === prefix +'bing') {
     	message.reply('BONG!');
+  	}
+});
+
+   client.on('message', message => {
+    if (message.content === prefix +'randomNumber') {
+    	message.reply(' error!Math.floor(Math.random() * 100) + 1; ');
   	}
 });
 
