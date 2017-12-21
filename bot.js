@@ -8,7 +8,7 @@ client.on(  +'ready', () => {
     
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , bot commands about the menu ! , " $status " , " $s " , " Download " , " $features " , " $gkgta5 " ,  Other bot commands! " $help " , " $ping " , " $bing " , " no " , " yes " ," hi " , " hello " , " hi " ," Bye " , " goodbye " . ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , bot commands about the menu ! , " $status " , " $s " , " Download " , " $features " , " $gkgta5 " ,  Other bot commands! " $help " , " $ping " , " $bing " , " no " , " yes " ," hi " , " hello " , " hi " ," Bye " , " Goodbye " , " Goodnight " , " night ". ');
   	}
 });
 //menu stuff 
@@ -16,6 +16,9 @@ client.on('message', message => {
     if (message.content === 'download') {
     	message.reply('the cheat is currently not available, please be patient as there is only one developer.');
   	}
+          if (message.content === 'Download') {
+            message.reply('the cheat is currently not available, please be patient as there is only one developer.');
+        }
 });
 
 client.on('message', message => {
@@ -87,12 +90,21 @@ client.on('message', message => {
     	message.reply('BONG!');
   	}
 });
-/*
+
    client.on('message', message => {
-    if (message.content === prefix +'randomNumber') {
-    	message.reply('  ');
+    if (message.content === 'goodnight') {
+    	message.reply('Goodnight, sleep well, talk to you again soon');
   	}
-});
-*/
+           if (message.content === 'Goodnight') {
+            message.reply('Goodnight, sleep well, talk to you again soon');
+            }
+                 if (message.content === 'night') {
+                    message.reply('Goodnight, sleep well, talk to you again soon');
+                    }
+                        if (message.content === 'Night') {
+                    message.reply('Goodnight, sleep well, talk to you again soon');
+                    }
+    });
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
