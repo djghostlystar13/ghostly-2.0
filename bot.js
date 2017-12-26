@@ -32,7 +32,7 @@ client.on('message', message => {
 });
     client.on('message', message => {
     if (message.content === prefix +'gkgta5') {
-    	message.reply('error! NO codes available! ');
+    	dm.reply('error! NO codes available! ');
   	}
 });
    
