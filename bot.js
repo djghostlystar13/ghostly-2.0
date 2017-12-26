@@ -30,13 +30,14 @@ client.on('message', message => {
         }
     
 });
+/*
     client.on('message', message => {
     if (message.content === prefix +'gta5-key') {
     	 message.channel.send("Please check your **DM**s");
-        message.author.send('error! NO codes available! ');
+        message.author.send('');
   	}
 });
-   
+   */
 client.on('message', message => {
     if (message.content === prefix +'features') {
     	message.reply('List of features in the menu! Godmode , DemiGod , *Teleport , No Reload , Infinite Ammo , Bullet Damage , RP increase , Never wanted , Super jump , Fast run ,Vehicle god , No recoil , Set time . *means this feature is buggy and sometimes crashes game . ');
