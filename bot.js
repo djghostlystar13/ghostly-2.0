@@ -8,7 +8,7 @@ client.on(  +'ready', () => {
     
 client.on('message', message => {
     if (message.content === prefix +'help') {
-    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , bot commands about the menu ! , " $status " , " $s " , " Download " , " $features " , " $gkgta5 " ,  Other bot commands! " $help " , " $ping " , " $bing " , " no " , " yes " ," hi " , " hello " , " hi " ," Bye " , " Goodbye " , " Goodnight " , " night ". ');
+    	message.reply('Hello im Ghostly-2.0, my commands are the following with out quotation marks , bot commands about the menu ! , " $status " , " $s " , " Download " , " $features " , " $gta5-key " ,  Other bot commands! " $help " , " $ping " , " $bing " , " no " , " yes " ," hi " , " hello " , " hi " ," Bye " , " Goodbye " , " Goodnight " , " night ". ');
   	}
 });
 //menu stuff 
@@ -31,7 +31,7 @@ client.on('message', message => {
     
 });
     client.on('message', message => {
-    if (message.content === prefix +'gkgta5') {
+    if (message.content === prefix +'gta5-key') {
     	client.users.get('id').send('error! NO codes available! ');
   	}
 });
