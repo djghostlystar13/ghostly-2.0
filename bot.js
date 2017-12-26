@@ -32,7 +32,8 @@ client.on('message', message => {
 });
     client.on('message', message => {
     if (message.content === prefix +'gta5-key') {
-    	client.users.get('id').send('error! NO codes available! ');
+    	 msg.channel.send("Please check your **DM**s");
+        msg.author.send('error! NO codes available! ');
   	}
 });
    
