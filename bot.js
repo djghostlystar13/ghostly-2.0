@@ -30,60 +30,19 @@ client.on('message', message => {
         }
     
 });
-/*
-    client.on('message', message => {
-    if (message.content === prefix +'gta5-key') {
-    	 message.channel.send("Please check your **DM**s");
-        message.author.send('This code is your persional code do not share without quotation marks " Gta520172018 "');
-  	}
-});
-   */
+
+  //  client.on('message', message => {
+  //  if (message.content === prefix +'gta5-key') {
+  //  	 message.channel.send("Please check your **DM**s");
+  //      message.author.send('This code is your persional code do not share without quotation marks " Gta520172018 "');
+  //	}
+//});
+  
 client.on('message', message => {
     if (message.content === prefix +'features') {
     	message.channel.reply('List of features in the menu! Godmode , DemiGod , *Teleport , No Reload , Infinite Ammo , Bullet Damage , RP increase , Never wanted , Super jump , Fast run ,Vehicle god , No recoil , Set time . *means this feature is buggy and sometimes crashes game . ');
   	}
 });
-
-/*fun featues of bot
-client.on('message', message => {
-    if (message.content === 'No') {
-    	message.reply('Yes!');
-  	}
-            if (message.content === 'no') {
-    	        message.reply('Yes!');
-  	       }
-     if (message.content === 'Yes') {
-    	message.reply('No!');
-  	}
-            if (message.content === 'yes') {
-    	        message.reply('No!');
-  	      }
-});
-
-client.on('message', message => {
-     if (message.content === 'hi') {
-    	message.reply('Bye!');
-  	}
-            if (message.content === 'Hi') {
-    	        message.reply('Bye!');
-  	        }
-    if (message.content === 'hello') {
-    	message.reply('Goodbye!');
-  	}
-            if (message.content === 'Hello') {
-    	        message.reply('Goodbye!');
-  	        }
-     if (message.content === 'bye') {
-    	message.reply('Hello!');
-  	}
-    if (message.content === 'goodbye') {
-    	message.reply('Hello!');
-  	}
-            if (message.content === 'Goodbye') {
-    	          message.reply('Hello!');
-  	        }
-});
-*/
 client.on('message', message => {
     if (message.content === prefix +'ping') {
     	message.channel.send('PONG!');
@@ -92,21 +51,6 @@ client.on('message', message => {
     	message.channel.reply('BONG!');
   	}
 });
-/*
-   client.on('message', message => {
-    if (message.content === 'goodnight') {
-    	message.reply('Goodnight, sleep well, talk to you again soon');
-  	}
-           if (message.content === 'Goodnight') {
-            message.reply('Goodnight, sleep well, talk to you again soon');
-            }
-                 if (message.content === 'night') {
-                    message.reply('Goodnight, sleep well, talk to you again soon');
-                    }
-                        if (message.content === 'Night') {
-                    message.reply('Goodnight, sleep well, talk to you again soon');
-                    }
-    });
-*/
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
