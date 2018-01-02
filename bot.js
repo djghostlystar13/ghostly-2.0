@@ -12,11 +12,15 @@ client.on('message', message => {
     if (message.content === prefix +'ping') {
     	message.channel.send('PONG!');
   	}
-       if (message.content === prefix +'bing') {
-    	message.reply('BONG!');
+ 
+});
+   client.on('message', message => {
+   if (message.content === prefix +'gta5-key') {
+   	 message.reply("Please check your **DM**s");
+      message.author.send('This code is your persional code do not share without quotation marks " Gta520172018 "');
   	}
 });
-
+  
   
 
 // THIS  MUST  BE  THIS  WAY
@@ -57,13 +61,7 @@ client.on('message', message => {
     
 });
 
-  //  client.on('message', message => {
-  //  if (message.content === prefix +'gta5-key') {
-  //  	 message.channel.send("Please check your **DM**s");
-  //      message.author.send('This code is your persional code do not share without quotation marks " Gta520172018 "');
-  //	}
-//});
-  
+ 
 client.on('message', message => {
     if (message.content === prefix +'features') {
     	message.reply('List of features in the menu! Godmode , DemiGod , *Teleport , No Reload , Infinite Ammo , Bullet Damage , RP increase , Never wanted , Super jump , Fast run ,Vehicle god , No recoil , Set time . *means this feature is buggy and sometimes crashes game . ');
