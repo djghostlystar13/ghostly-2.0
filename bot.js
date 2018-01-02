@@ -14,13 +14,14 @@ client.on('message', message => {
   	}
  
 });
+
    client.on('message', message => {
    if (message.content === prefix +'gta5-key') {
-        message.channel.send("Please check your **DM**s");
+        message.channel.send('Please check your **DM**s');
       message.author.send('This code is your persional code do not share without quotation marks " Gta520172018 "');
   	}
 });
-  
+ 
  
 
     
